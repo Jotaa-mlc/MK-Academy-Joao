@@ -1012,6 +1012,8 @@ GameObject:
   - component: {fileID: 1432083091}
   - component: {fileID: 1432083090}
   - component: {fileID: 1432083094}
+  - component: {fileID: 1432083096}
+  - component: {fileID: 1432083095}
   m_Layer: 0
   m_Name: Excercise03
   m_TagString: Untagged
@@ -1082,11 +1084,38 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1432083089}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9d279c3da0be76047b1f5016d53e9461, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1432083095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432083089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fdd3270aa7fe544da39c09039f5a99a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeOfVector: 10
+--- !u!114 &1432083096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432083089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 366517c4e21e4764c857f375e6d59e2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeOfVector: 10
+  printDebug: 0
 --- !u!1 &1458404860
 GameObject:
   m_ObjectHideFlags: 0
