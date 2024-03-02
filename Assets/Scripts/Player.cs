@@ -33,7 +33,6 @@ public class Player : MonoBehaviour
         }
         if (Input.GetKeyDown("space") && canJump < 2)
         {
-            print("jump");
             Jump();
         }
        

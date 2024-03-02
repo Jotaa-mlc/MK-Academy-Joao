@@ -13,8 +13,11 @@ public class Lv5Q45 : MonoBehaviour
         int[] vector = InitVector(sizeOfVector, 0, 1000);
         if(printDebug)
         {
+            print("debug");
             PrintVector(vector, false);
+            print("debug");
         }
+        PrintVector(vector, true);
     }
 
     public int[] InitVector(int n, int min, int max)

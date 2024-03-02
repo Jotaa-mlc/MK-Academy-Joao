@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,9 +15,7 @@ public class Lv5Q47 : MonoBehaviour
         test = this.gameObject.GetComponent<Lv5Q45>();
 
         int[] vector = test.InitVector(sizeOfVector, 1, 999999);
-
-        int value = UnityEngine.Random.Range(1, 999999);
-
+        int value = Random.Range(1, 999999);
         int equals = 0, greater = 0, less = 0;
 
         foreach(int i in vector)
@@ -37,6 +34,12 @@ public class Lv5Q47 : MonoBehaviour
             }
         }
 
-        print($"Maiores: {greater}\nIguais: {equals}\nMenores: {less}");
+        print("LV5Q47");
+        print("Vector: \n");
+        test.PrintVector(vector, false);
+        print($"Valor de comparação: {value}");
+        print($"Maiores: {greater}");
+        print($"Iguais: {equals}");
+        print($"Menores: {less}");
     }
 }
