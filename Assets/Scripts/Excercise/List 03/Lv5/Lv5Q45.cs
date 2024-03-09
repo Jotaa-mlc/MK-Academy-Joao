@@ -7,6 +7,7 @@ public class Lv5Q45 : MonoBehaviour
     [SerializeField] int sizeOfVector = 10;
 
     [SerializeField] bool printDebug = true;
+
     // Start is called before the first frame update
     void Start()
     {
