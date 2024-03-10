@@ -36,7 +36,7 @@ public class ContaBancaria
     public void PrintContaBancaria()
     {
         Debug.Log(string.Format("Nome do Titular: {0}", this.nomeTitular));
-        Debug.Log(string.Format("Número da Conta: {0}", this.numeroConta));
+        Debug.Log(string.Format("Número da Conta: {0:D4}", this.numeroConta));
     }
 
     public ContaBancaria() {}

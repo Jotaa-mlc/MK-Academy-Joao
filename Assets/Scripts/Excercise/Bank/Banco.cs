@@ -20,7 +20,7 @@ public class Banco
 
         foreach (var conta in _contasBancarias)
         {
-            if(conta.ConsultarTitular() == nomeTitular)
+            if(conta.ConsultarTitular().Contains(nomeTitular))
             {
                 result.Add(conta);
             }
@@ -53,8 +53,9 @@ public class Banco
             destinatario.Deposito(valor);
 
             string msg = string.Format(
-                "Transferência para {0} (conta - {1}) no valor de {2} realizada com sucesso.\n Saldo restante na conta {4} : R$ {5}",
-                destinatario.ConsultarTitular(), destinatario.ConsultarNumeroConta(), valor, remetente.ConsultarNumeroConta(), remetente.ConsultarSaldo());
+                "Transferência de {0} (conta - {1}) para {3} (conta - {4}) no valor de {5} realizada com sucesso.\n Saldo restante na conta: R$ {2}",
+                remetente.ConsultarTitular(), remetente.ConsultarNumeroConta(), remetente.ConsultarSaldo(),
+                destinatario.ConsultarTitular(), destinatario.ConsultarNumeroConta(), valor);
             Debug.Log(msg);
         }
         else
