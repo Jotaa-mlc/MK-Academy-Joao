@@ -6,15 +6,12 @@ using UnityEngine;
 
 public class Lv5Q47 : MonoBehaviour
 {
-
-    Lv5Q45 test;
     [SerializeField] int sizeOfVector = 10;
-    // Start is called before the first frame update
+
+    Utils utils = new();
     void Start()
     {
-        test = this.gameObject.GetComponent<Lv5Q45>();
-
-        int[] vector = test.InitVector(sizeOfVector, 1, 999999);
+        int[] vector = utils.VectorInit(sizeOfVector, 1, 999999);
         int value = Random.Range(1, 999999);
         int equals = 0, greater = 0, less = 0;
 
@@ -36,7 +33,7 @@ public class Lv5Q47 : MonoBehaviour
 
         print("LV5Q47");
         print("Vector: \n");
-        test.PrintVector(vector, false);
+        utils.VectorPrint(vector);
         print($"Valor de comparação: {value}");
         print($"Maiores: {greater}");
         print($"Iguais: {equals}");

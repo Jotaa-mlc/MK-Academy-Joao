@@ -5,13 +5,12 @@ using UnityEngine;
 public class Lv5Q49 : MonoBehaviour
 {
     [SerializeField] int sizeOfVector = 5;
-    Lv5Q45 test;
+
+    Utils utils = new();
     void Start()
     {
-        test = this.gameObject.GetComponent<Lv5Q45>();
-
-        int[] vector1 = test.InitVector(sizeOfVector, 0, 50);
-        int[] vector2 = test.InitVector(sizeOfVector, 0, 50);
+        int[] vector1 = utils.VectorInit(sizeOfVector, 0, 50);
+        int[] vector2 = utils.VectorInit(sizeOfVector, 0, 50);
         int equals = 0;
 
         for(int i = 0; i < sizeOfVector; i++)
@@ -23,8 +22,8 @@ public class Lv5Q49 : MonoBehaviour
         }
 
         print("Lv5Q49");
-        test.PrintVector(vector1, false);
-        test.PrintVector(vector2, false);
+        utils.VectorPrint(vector1);
+        utils.VectorPrint(vector2);
         print($"Iguais: {equals}");
     }
 }

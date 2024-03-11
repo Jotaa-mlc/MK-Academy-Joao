@@ -5,14 +5,13 @@ using UnityEngine;
 public class Lv5Q46 : MonoBehaviour
 {
     [SerializeField] int sizeOfVector = 5;
-    [SerializeField] bool multEscalar = false;
-    Lv5Q45 test;
+    [SerializeField] bool multEscalar = false;//Dúvida sobre a forma correta de calcular o produto escalar de vetores
+
+    Utils utils = new();
     void Start()
     {
-        test = this.gameObject.GetComponent<Lv5Q45>();
-
-        int[] Vx = test.InitVector(sizeOfVector, 0, 1000);
-        int[] Vy = test.InitVector(sizeOfVector, 0, 1000);
+        int[] Vx = utils.VectorInit(sizeOfVector, 0, 1000);
+        int[] Vy = utils.VectorInit(sizeOfVector, 0, 1000);
         float somaEscalar = 0;
 
         if (multEscalar)
@@ -34,8 +33,8 @@ public class Lv5Q46 : MonoBehaviour
         }
 
         print("Lv5Q46");
-        test.PrintVector(Vx, false);
-        test.PrintVector(Vy, false);
+        utils.VectorPrint(Vx);
+        utils.VectorPrint(Vy);
         print($"Soma Escalar: {somaEscalar}");
     }
 }
