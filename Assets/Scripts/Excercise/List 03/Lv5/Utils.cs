@@ -15,18 +15,21 @@ public class Utils
 
         return vector;
     }
-    public void VectorPrint(int[] vector)
+    public void VectorPrint(int[] vector, bool reverse = false)
     {
-        foreach (int i in vector)
+        if (reverse)
         {
-            Debug.Log(i);
+            foreach (int i in vector)
+            {
+                Debug.Log(i);
+            }
         }
-    }
-    public void VectorPrintReverse(int[] vector) 
-    {
-        for (int i = vector.Length - 1; i >= 0; i--)
+        else
         {
-            Debug.Log(vector[i]);
+            for (int i = vector.Length - 1; i >= 0; i--)
+            {
+                Debug.Log(vector[i]);
+            }
         }
     }
     #endregion
