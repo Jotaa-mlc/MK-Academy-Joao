@@ -11,9 +11,9 @@ public class Character
 
     public Character(string _name, int _hitPoints, int _damage)
     {
-        name = _name;
-        hitPoints = _hitPoints;
-        damage = _damage;
+        this.name = _name;
+        this.hitPoints = _hitPoints;
+        this.damage = _damage;
     }
 
     public void SetHitPoints(int damage) 
