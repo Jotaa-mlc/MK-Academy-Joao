@@ -30,10 +30,15 @@ public class Inventory
     {
         this.coins += value;
     }
-    void GiveMoney2(float value, Inventory seller)
+    bool GiveMoney2(float value, Inventory seller)
     {
-        this.coins -= value;
-        seller.ReceiveMoney(value);
+        if(value <= this.coins)
+        {
+            this.coins -= value;
+            seller.ReceiveMoney(value);
+            return true;
+        }
+        return false;
     }
     public bool ReceiveItem(Items item)
     {
@@ -54,12 +59,10 @@ public class Inventory
     }
     public void Sell(Items item, Inventory buyer)
     {
-        buyer.Buy(item, this);
-        this.GiveItem2(item, buyer);
-    }
-    void Buy(Items item, Inventory seller)
-    {
-        this.GiveMoney2(item.Value, seller);
+        if(buyer.GiveMoney2(item.Value, this))
+        {
+            this.GiveItem2(item, buyer);
+        }
     }
     public Inventory (float _coins, List<Items> _items = null)
     {
