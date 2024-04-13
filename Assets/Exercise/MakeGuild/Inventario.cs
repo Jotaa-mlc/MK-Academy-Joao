@@ -50,18 +50,23 @@ public class Inventory
         }
         return recieved;
     }
-    void GiveItem2(Items item, Inventory buyer)
+    bool GiveItem2(Items item, Inventory buyer)
     {
         if (buyer.ReceiveItem(item))
         {
             this.ItemsInventory.Remove(item);
+            return true;
         }
+        return false;
     }
     public void Sell(Items item, Inventory buyer)
     {
         if(buyer.GiveMoney2(item.Value, this))
         {
-            this.GiveItem2(item, buyer);
+            if(!this.GiveItem2(item, buyer))
+            {
+                this.GiveMoney2(item.Value, buyer);
+            }
         }
     }
     public Inventory (float _coins, List<Items> _items = null)

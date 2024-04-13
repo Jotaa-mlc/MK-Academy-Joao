@@ -21,20 +21,20 @@ public class ClassChallenge : MonoBehaviour
         BossSlime bossSlime = new("Slime Gigante", 15f, 10f, 3f, 10f, "SQUISHY", "squi squi squi...");
         BossOwlBear bossOwlBear = new("Monarca Urso Coruja", 15f, 10f, 3f, 10f, "UUUHHHHHRRROOOOAAAAR", "ploft");
 
-        List<CharacterB> list = new List<CharacterB>();
+        List<CharacterB> characterList = new List<CharacterB>();
 
-        list.Add(guerreiro);
-        list.Add(mago);
-        list.Add(ladino);
-        list.Add(clerigo);
-        list.Add(goblin);
-        list.Add(slime);
-        list.Add(owlBear);
-        list.Add(bossGoblin);
-        list.Add(bossSlime);
-        list.Add(bossOwlBear);
+        characterList.Add(guerreiro);
+        characterList.Add(mago);
+        characterList.Add(ladino);
+        characterList.Add(clerigo);
+        characterList.Add(goblin);
+        characterList.Add(slime);
+        characterList.Add(owlBear);
+        characterList.Add(bossGoblin);
+        characterList.Add(bossSlime);
+        characterList.Add(bossOwlBear);
 
-        foreach(var character in list)
+        foreach(var character in characterList)
         {
             character.EffectPhraseJoin();
             character.SimpleAttack(god);
