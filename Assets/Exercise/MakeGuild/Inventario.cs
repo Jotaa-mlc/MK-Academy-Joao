@@ -1,8 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using static UnityEditor.Progress;
 
 public class Inventory
 {
@@ -32,7 +29,7 @@ public class Inventory
     }
     bool GiveMoney2(float value, Inventory seller)
     {
-        if(value <= this.coins)
+        if (value <= this.coins)
         {
             this.coins -= value;
             seller.ReceiveMoney(value);
@@ -61,15 +58,15 @@ public class Inventory
     }
     public void Sell(Items item, Inventory buyer)
     {
-        if(buyer.GiveMoney2(item.Value, this))
+        if (buyer.GiveMoney2(item.Value, this))
         {
-            if(!this.GiveItem2(item, buyer))
+            if (!this.GiveItem2(item, buyer))
             {
                 this.GiveMoney2(item.Value, buyer);
             }
         }
     }
-    public Inventory (float _coins, List<Items> _items = null)
+    public Inventory(float _coins, List<Items> _items = null)
     {
         this.coins = _coins;
         this.ItemsInventory = _items == null ? new List<Items>() : _items;

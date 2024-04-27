@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Questao5 : MonoBehaviour
@@ -15,10 +13,10 @@ public class Questao5 : MonoBehaviour
             ordenado = true;
             for (int i = 1; i < valores.Length; i++)
             {
-                if (valores[i-1] > valores[i])
+                if (valores[i - 1] > valores[i])
                 {
-                    int aux = valores[i-1];
-                    valores[i-1] = valores[i];
+                    int aux = valores[i - 1];
+                    valores[i - 1] = valores[i];
                     valores[i] = aux;
                     ordenado = false;
                 }

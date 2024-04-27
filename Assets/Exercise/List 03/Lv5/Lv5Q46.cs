@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Lv5Q46 : MonoBehaviour
@@ -16,7 +14,7 @@ public class Lv5Q46 : MonoBehaviour
 
         if (multEscalar)
         {
-            for(int i = 0; i < sizeOfVector; i++)
+            for (int i = 0; i < sizeOfVector; i++)
             {
                 somaEscalar += Vx[i] * Vy[i];
             }

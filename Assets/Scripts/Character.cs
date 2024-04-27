@@ -1,8 +1,3 @@
-using JetBrains.Annotations;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
 public class Character
 {
     string name;
@@ -16,7 +11,7 @@ public class Character
         this.damage = _damage;
     }
 
-    public void SetHitPoints(int damage) 
+    public void SetHitPoints(int damage)
     {
 
     }

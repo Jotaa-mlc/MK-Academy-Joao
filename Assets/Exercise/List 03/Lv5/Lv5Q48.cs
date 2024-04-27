@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Lv5Q48 : MonoBehaviour
@@ -8,7 +6,7 @@ public class Lv5Q48 : MonoBehaviour
     void Start()
     {
         int[] ageCandidates = new int[20];
-        string[] nameCandidates = { "Alice", "Sofia", "Beatriz", "Lara", "Valentina", "Luisa", "Laura", "Júlia", "Ágata", "Alicia", "Bianca", "Yasmin", "Manuela", "Clara", "Gabriela", "Ana", "Giovana", "Melissa", "Heloísa", "Isadora"};
+        string[] nameCandidates = { "Alice", "Sofia", "Beatriz", "Lara", "Valentina", "Luisa", "Laura", "Júlia", "Ágata", "Alicia", "Bianca", "Yasmin", "Manuela", "Clara", "Gabriela", "Ana", "Giovana", "Melissa", "Heloísa", "Isadora" };
 
         ageCandidates = utils.VectorInit(ageCandidates.Length, 16, 23);
 

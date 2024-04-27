@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,8 +17,8 @@ public class Guild : MonoBehaviour
         itemsList.Add(escudo);
         itemsList.Add(arco);
         itemsList.Add(pexera);
-        itemsList.Add( armadura);
-        
+        itemsList.Add(armadura);
+
         Inventory mercador = new(50f, itemsList);
         Inventory aventureiro = new(40f);
 

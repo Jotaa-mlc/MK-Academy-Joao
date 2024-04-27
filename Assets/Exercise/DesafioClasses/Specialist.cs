@@ -1,5 +1,4 @@
 using UnityEngine;
-using System.Threading;
 
 public class Warrior : CharacterB
 {

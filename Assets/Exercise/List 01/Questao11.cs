@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Questao11 : MonoBehaviour
@@ -9,7 +7,7 @@ public class Questao11 : MonoBehaviour
     void Start()
     {
         bool ehAcutangulo = true;
-        foreach ( float i in angulos )
+        foreach (float i in angulos)
         {
             if (i == 90)
             {

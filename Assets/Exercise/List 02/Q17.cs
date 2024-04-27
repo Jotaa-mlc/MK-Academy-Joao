@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Q17 : MonoBehaviour
@@ -16,7 +14,7 @@ public class Q17 : MonoBehaviour
 
     void ChangeValues(ref int a, ref int b)
     {
-        int temp = a; 
+        int temp = a;
         a = b;
         b = temp;
     }

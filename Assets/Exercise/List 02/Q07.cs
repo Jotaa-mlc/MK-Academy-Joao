@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Q07 : MonoBehaviour
@@ -11,7 +9,7 @@ public class Q07 : MonoBehaviour
         print("Ftorial de " + number + " é: " + Factorial(number));
     }
 
-    int Factorial( int number)
+    int Factorial(int number)
     {
         int factorial = 1;
 

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Lv2Q12 : MonoBehaviour
@@ -12,9 +10,9 @@ public class Lv2Q12 : MonoBehaviour
         print("A diferença entre os números é: " + Module(number1 - number2));
     }
 
-    int Module(int i) 
+    int Module(int i)
     {
         int module = i > 0 ? i : i * -1;
-        return module; 
+        return module;
     }
 }

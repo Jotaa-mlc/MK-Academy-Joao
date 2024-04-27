@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Questao2 : MonoBehaviour
@@ -11,7 +9,7 @@ public class Questao2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(anoAtual - anoNascimento >= idadeMinima)//Pode votar
+        if (anoAtual - anoNascimento >= idadeMinima)//Pode votar
         {
             print("Pode votar.");
         }

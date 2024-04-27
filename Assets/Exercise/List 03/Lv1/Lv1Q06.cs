@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Lv1Q06 : MonoBehaviour
@@ -8,7 +6,7 @@ public class Lv1Q06 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        print("Temperatura em °F: " +  ConvertCelciusFarenheit(temperatureCelcius));
+        print("Temperatura em °F: " + ConvertCelciusFarenheit(temperatureCelcius));
     }
 
     float ConvertCelciusFarenheit(float celcius)

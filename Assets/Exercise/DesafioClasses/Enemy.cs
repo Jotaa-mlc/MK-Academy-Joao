@@ -1,14 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-
 #region Normal Enemies
 public class Goblin : CharacterB
 {
     public Goblin(string _name, float _hitPoints, float _attackStrentgh, float _resistence, float _speed, string _effectPhraseJoiningCombat, string _effectPhraseDefeated) : base(_name, _hitPoints, _attackStrentgh, _resistence, _speed, _effectPhraseJoiningCombat, _effectPhraseDefeated)
     { }
-    public override void SpecialSkill() 
+    public override void SpecialSkill()
     {
         Debug.Log("GOBLIN SNEAKY ATTACK");
     }
@@ -40,7 +36,7 @@ public class BossGoblin : Goblin
     public override void SimpleAttack(CharacterB target)
     {
         float amplifier = 2.0f;
-        target.RecieveDamage(this.attackStrentgh * amplifier);
+        target.RecieveDamage(this.atkPower * amplifier);
     }
     public override void SpecialSkill()
     {
@@ -54,7 +50,7 @@ public class BossSlime : Slime
     public override void SimpleAttack(CharacterB target)
     {
         float amplifier = 2.0f;
-        target.RecieveDamage(this.attackStrentgh * amplifier);
+        target.RecieveDamage(this.atkPower * amplifier);
     }
     public override void SpecialSkill()
     {
@@ -68,11 +64,11 @@ public class BossOwlBear : OwlBear
     public override void SimpleAttack(CharacterB target)
     {
         float amplifier = 2.0f;
-        target.RecieveDamage(this.attackStrentgh * amplifier);
+        target.RecieveDamage(this.atkPower * amplifier);
     }
     public override void SpecialSkill()
     {
-        Debug.Log("BOSS ONLBEAR BITE ATTACK");
+        Debug.Log("BOSS OWLBEAR BITE ATTACK");
     }
 }
 #endregion

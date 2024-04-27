@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Q12 : MonoBehaviour
@@ -15,7 +13,7 @@ public class Q12 : MonoBehaviour
     {
         bool isPrime = true;
 
-        for (int i = n/2; i > 1; i--)
+        for (int i = n / 2; i > 1; i--)
         {
             if (n % i == 0)
             {

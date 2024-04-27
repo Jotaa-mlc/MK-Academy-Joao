@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Questao7 : MonoBehaviour
@@ -10,7 +8,7 @@ public class Questao7 : MonoBehaviour
     void Start()
     {
         float area = 0f;
-        switch (nLados) 
+        switch (nLados)
         {
             case 3:
                 print("TRIANGULO!");

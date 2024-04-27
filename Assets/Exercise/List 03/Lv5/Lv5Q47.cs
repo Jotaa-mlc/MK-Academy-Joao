@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 
@@ -15,19 +13,19 @@ public class Lv5Q47 : MonoBehaviour
         int value = Random.Range(1, 999999);
         int equals = 0, greater = 0, less = 0;
 
-        foreach(int i in vector)
+        foreach (int i in vector)
         {
-            if(i == value)
+            if (i == value)
             {
                 equals++;
             }
-            else if(i > value) 
+            else if (i > value)
             {
                 greater++;
             }
-            else 
+            else
             {
-                less++; 
+                less++;
             }
         }
 

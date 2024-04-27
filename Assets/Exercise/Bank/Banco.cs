@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,7 +7,7 @@ public class Banco
 
     public void CriarContaBancaria(string _nomeTitular, int _numeroConta, float _saldo)
     {
-        ContaBancaria conta = new(_nomeTitular,_numeroConta, _saldo);
+        ContaBancaria conta = new(_nomeTitular, _numeroConta, _saldo);
         _contasBancarias.Add(conta);
         Debug.Log("Conta Criada");
         conta.PrintContaBancaria();
@@ -20,7 +19,7 @@ public class Banco
 
         foreach (var conta in _contasBancarias)
         {
-            if(conta.ConsultarTitular().Contains(nomeTitular))
+            if (conta.ConsultarTitular().Contains(nomeTitular))
             {
                 result.Add(conta);
             }
@@ -29,8 +28,8 @@ public class Banco
         return result;
     }
 
-    public ContaBancaria EncontrarContaByNumeroConta(int numeroConta) 
-    { 
+    public ContaBancaria EncontrarContaByNumeroConta(int numeroConta)
+    {
         ContaBancaria result = new();
 
         foreach (var conta in _contasBancarias)
@@ -47,7 +46,7 @@ public class Banco
 
     public void Transferencia(ContaBancaria remetente, ContaBancaria destinatario, float valor)
     {
-        if(remetente.ConsultarSaldo() >= valor)
+        if (remetente.ConsultarSaldo() >= valor)
         {
             remetente.Saque(valor);
             destinatario.Deposito(valor);

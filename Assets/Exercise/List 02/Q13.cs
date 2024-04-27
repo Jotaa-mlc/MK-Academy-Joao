@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -24,10 +23,10 @@ public class Q13 : MonoBehaviour
 
     List<int> GetDividers(int n)
     {
-        List <int> dividers = new List<int>();
+        List<int> dividers = new List<int>();
         dividers.Add(n);
 
-        for (int i = n/2; i > 0; i--)
+        for (int i = n / 2; i > 0; i--)
         {
             if (n % i == 0)
             {

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ContaBancaria
@@ -39,7 +37,7 @@ public class ContaBancaria
         Debug.Log(string.Format("Número da Conta: {0:D4}", this.numeroConta));
     }
 
-    public ContaBancaria() {}
+    public ContaBancaria() { }
 
     public ContaBancaria(string _nomeTitular, int _numeroConta, float _saldo) : this()
     {

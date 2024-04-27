@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Questao10 : MonoBehaviour
@@ -12,14 +10,14 @@ public class Questao10 : MonoBehaviour
 
         for (int i = 1; i < lados.Length; i++)
         {
-            if (lados[i-1] == lados[i])
+            if (lados[i - 1] == lados[i])
                 ladosIguais++;
         }
 
         if (lados[0] == lados[lados.Length - 1])
             ladosIguais++;
 
-        switch (ladosIguais) 
+        switch (ladosIguais)
         {
             case 0:
                 print("ESCALENO!");

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Questao9 : MonoBehaviour
@@ -10,7 +8,7 @@ public class Questao9 : MonoBehaviour
     {
         int max = valores[0];
 
-        foreach (int i in valores) 
+        foreach (int i in valores)
         {
             if (i > max)
             {

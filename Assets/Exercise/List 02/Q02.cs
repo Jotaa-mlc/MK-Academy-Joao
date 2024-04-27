@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Q02 : MonoBehaviour
@@ -12,7 +10,7 @@ public class Q02 : MonoBehaviour
         print("Comparação dos números: " + CompareNumber(number1, number2));
     }
 
-    int CompareNumber(float n1,  float n2)
+    int CompareNumber(float n1, float n2)
     {
         if (n1 > n2) return 1;
         else if (n1 == n2) return 0;

@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -22,7 +21,7 @@ public class WallStreet : MonoBehaviour
 
         ContaBancaria resultByNumero = banco.EncontrarContaByNumeroConta(3);
         print("Resultado pesquisa por Número da conta");
-        resultByNumero.PrintContaBancaria() ;
+        resultByNumero.PrintContaBancaria();
 
         banco.Transferencia(banco.EncontrarContaByNumeroConta(1), banco.EncontrarContaByNumeroConta(3), 15000);
 

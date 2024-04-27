@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Lv5Q49 : MonoBehaviour
@@ -13,7 +11,7 @@ public class Lv5Q49 : MonoBehaviour
         int[] vector2 = utils.VectorInit(sizeOfVector, 0, 50);
         int equals = 0;
 
-        for(int i = 0; i < sizeOfVector; i++)
+        for (int i = 0; i < sizeOfVector; i++)
         {
             if (vector1[i] == vector2[i])
             {
